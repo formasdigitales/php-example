@@ -33,12 +33,12 @@ $responseTimbre = $clienteFD->timbrar($parametros);
  
  ```PHP
  	/* solo informativo... muestra el codigo de error en caso de existir y resultados */
-		if(isset($responseTimbre->acuseCFDI->error)){
-			echo "codigoErr: " . $responseTimbre->acuseCFDI->error. "<br>";
-		}
+if(isset($responseTimbre->acuseCFDI->error)){
+	echo "codigoErr: " . $responseTimbre->acuseCFDI->error. "<br>";
+}
 
-		if($responseTimbre->acuseCFDI->xmlTimbrado){
-			echo 'XML TMIBRADO:<BR> <textarea>' . $responseTimbre->acuseCFDI->xmlTimbrado . '</textarea>';
-		}
+if($responseTimbre->acuseCFDI->xmlTimbrado){
+	echo 'XML TMIBRADO:<BR> <textarea>' . $responseTimbre->acuseCFDI->xmlTimbrado . '</textarea>';
+}
 
  ```
